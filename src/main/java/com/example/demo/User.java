@@ -35,6 +35,18 @@ public class User {
     inverseJoinColumns = @JoinColumn(name = "role_id"))
     private Collection<Role> roles;
 
+    public User() {
+    }
+
+    public User(String email, String password, String firstname, String lastname, boolean enabled, String username) {
+        this.email = email;
+        this.password = password;
+        this.firstname = firstname;
+        this.lastname = lastname;
+        this.enabled = enabled;
+        this.username = username;
+    }
+
     public long getId() {
         return id;
     }
