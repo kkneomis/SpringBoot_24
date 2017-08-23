@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="www.thymeleaf.org">
-<head>
-    <meta charset="UTF-8"/>
-    <title>Spring Security Template</title>
-</head>
+<head th:replace="base :: headstuff"></head>
 <body>
     <h4>New User Registration</h4>
     <form autocomplete="off" action="#" th:action="@{/register}"
